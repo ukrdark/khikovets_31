@@ -1,0 +1,95 @@
+.items {
+    padding-bottom: 94px;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+}
+
+
+.item {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 370px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    transition: .3s;
+    background-color: rgba(33, 150, 243, 0.90);
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    &:hover &__heading{
+        color:#fff;
+        transition: .3s;
+    }
+
+    &:nth-child(1) &__header{
+        background-image: url("../img/portfolio1.png");
+    }
+    &:nth-child(2) &__header{
+        background-image: url("../img/portfolio2.png");
+    }
+    &:nth-child(3) &__header{
+        background-image: url("../img/portfolio3.png");
+    }
+    &:nth-child(4) &__header{
+        background-image: url("../img/portfolio4.png");
+    }
+    &:nth-child(5) &__header{
+        background-image: url("../img/portfolio5.png");
+    }
+    &:nth-child(6) &__header{
+        background-image: url("../img/portfolio6.png");
+    }
+    &:nth-child(7) &__header{
+        background-image: url("../img/portfolio7.png");
+    }
+    &:nth-child(8) &__header{
+        background-image: url("../img/portfolio8.png");
+    }
+    &:nth-child(9) &__header{
+        background-image: url("../img/portfolio9.png");
+    }
+
+    &__header {
+        padding: 63px 24px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__heading {
+        color: transparent;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        letter-spacing: 0.54px;
+    }
+
+    &__footer {
+        background-color: #fff;
+        padding: 24px;
+    }
+
+    &__footer--title {
+        color: #212121;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px; 
+        letter-spacing: 1.08px;
+    }
+
+    &__footer--subtitle {
+        color: #757575;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.48px;
+    }
+}
