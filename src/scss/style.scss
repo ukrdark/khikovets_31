@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap');
+@import 'base/*.scss';
+@import 'global/*.scss';
+@import '**/_*.scss';
+@import '../components/**/*.scss';
+
+ul li{
+    list-style: none;
+}
+
+ul{
+    padding-block-start: 0;
+    margin-block-start: 0;
+}
+*{
+    font-family: Roboto;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+    transition: .3s;
+    &:hover{
+        color: #2196F3;
+
+    }
+}
+
+
+
+
+
+.global-container{
+    width: min(1400px, 100%);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+
+
+.button{
+    width: max-content;
+    padding: 10px 24px;
+    background-color: #2196F3;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+
+.button__text{
+    line-height: 30px;
+    font-style: bold;
+    color: white;
+}
+
+.button:hover{
+    background-color: transparent;
+    border-color: #2196F3;
+    transition: .3s;
+}
