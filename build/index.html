@@ -11,376 +11,48 @@
 
 <body>
 	<header class="header">
-    <div class="global-container">
+    <div class="header__container">
         <div class="header__wrapper">
-            <a href="./index.html" class="header__logo">
-                <span class="header__logo-text">
-                    Web
-                </span>
-                <span class="header__logo-text">
-                    Studio
-                </span>
+            <a class="header__logo" href="#">
+                <div class="header__logo--logo"></div>
+                <div class="header__logo--text">Knowledgechain</div>
             </a>
-            <div class="header-links-list">
-                <ul class="header-links-list__list">
-                    <li class="header-links-list__item">
-                        <a href="#" class="header-links-list__link">Студія</a>
-                    </li>
-                    <li class="header-links-list__item">
-                        <a href="./portfolio.html" class="header-links-list__link">Портфоліо</a>
-                    </li>
-                    <li class="header-links-list__item">
-                        <a href="#" class="header-links-list__link open-modal">Контакти</a>
-                    </li>
+            <nav class="header__navbar navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__list--item"></li>
+                    <li class="navbar__list--item"></li>
+                    <li class="navbar__list--item"></li>
+                    <li class="navbar__list--item"></li>
+                    <li class="navbar__list--item"></li>
                 </ul>
-            </div>
-            <div class="header-contacts">
-                <ul class="header-contacts__list">
-                    <li class="header-contacts__item">
-                        <a href="mailto:info@devstudio.com" class="header-contacts__link">info@devstudio.com</a>
-                    </li>
-                    <li class="header-contacts__item">
-                        <a href="tel:+38 096 111 11 11" class="header-contacts__link">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="burger-menu">
-                <span class="burger-menu__item"></span>
-                <span class="burger-menu__item"></span>
-                <span class="burger-menu__item"></span>
+                <div class="navbar__searchbar">
+                    <input type="text" class="navbar__searchbar" placeholder="Type here to search...">
+                </div>
+            </nav>
+            <div class="header__profile profile">
+                <div class="profile__icon"></div>
+                <div class="profile__icon"></div>
+                <div class="profile__icon"></div>
+                <p class="profile__name">AR. Jakir</p>
             </div>
         </div>
     </div>
 </header>
 
-
-
-<div class="mobile-navbar">
+<navbar class="mobile-navbar">
     <ul class="mobile-navbar__list">
-        <li class="mobile-navbar__items">
-            <a href="#" class="mobile-navbar__link">Студія</a>
-            <a href="./portfolio.html" class="mobile-navbar__link">Портфоліо</a>
-            <a href="#" class="mobile-navbar__link">Контакти</a>
-        </li>
+        <li class="mobile-navbar__list--item"></li>
+        <li class="mobile-navbar__list--item"></li>
+        <li class="mobile-navbar__list--item"></li>
+        <li class="mobile-navbar__list--item"></li>
+        <li class="mobile-navbar__list--item"></li>
     </ul>
-    <div class="mobile-navbar__contacts navbar-contacts">
-        <div class="navbar-contacts__contacts">
-            <a tel="+38 096 111 11 11" class="mobile-navbar__contacts--phone">+38 096 111 11 11</a>
-            <a mailto="info@devstudio.com" class="mobile-navbar__contacts--email">info@devstudio.com</a>
-        </div>
-        <ul class="navbar-contacts__socials navbar-socials">
-            <li class="navbar-socials__item">
-                <a href="#" class="navbar-socials__link">Instagram</a>
-            </li>
-            <li class="navbar-socials__item">
-                <a href="#" class="navbar-socials__link">Twitter</a>
-            </li>
-            <li class="navbar-socials__item">
-                <a href="#" class="navbar-socials__link">Facebook</a>
-            </li>
-            <li class="navbar-socials__item">
-                <a href="#" class="navbar-socials__link">LinkedIn</a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-
-
-
-
-<div class="modal">
-    <div class="modal-content">
-        <div class="modal-content__close">
-            <button class="modal-content__close-button" onclick="handleModal()"></button>
-        </div>
-        <p class="modal-content__title">
-            Залиште свої дані, ми вам передзвонимо
-        </p>
-        <form action="" class="modal-content__form">
-            <div class="modal-content__input-container">
-                <label for="modal-name" class="modal-content__input-label">Ім'я</label>
-                <input type="text" id="modal-name" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-phone" class="modal-content__input-label">Телефон</label>
-                <input type="text" id="modal-phone" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-email" class="modal-content__input-label">Пошта</label>
-                <input type="email" id="modal-email" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-comment" class="modal-content__input-label">Коментар</label>
-                <input type="text" id="modal-comment" class="modal-content__input modal-content__input--textarea" placeholder="Введіть текст">
-            </div>
-            <div class="modal-content__input-checkbox-container">
-                <input type="checkbox" id="modal-policies" class="modal-content__input" placeholder="Введіть текст">
-                <label for="modal-policies" class="modal-content__input-label">Погоджуюся з розсилкою та приймаю Умови договору</label>
-            </div>
-            <div class="modal-content__send-btn">
-                <button class="button">
-                    <p class="button__text">
-                        Відправити
-                    </p>
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
+</navbar>
 	<main class="main">
-		<div class="decides">
-    <div class="decides__wrapper">
-        <div class="decides__title">
-            Ефективні рішення для вашого бізнесу
-        </div>
-        <div class="button open-modal" onclick="handleModal()">
-            <div class="button__text">
-                Замовити послугу
-            </div>
-        </div>
-    </div>
-</div>
-		<div class="traits">
-    <div class="traits__container global-container">
-        <ul class="traits__wrapper">
-            <li class="traits__item">
-                <div class="traits__item-header">
-                    <div class="traits__item-icon"></div>
-                </div>
-                <div class="traits__item-title">
-                    УВАГА ДО ДЕТАЛЕЙ
-                </div>
-                <div class="traits__item-subtitle">
-                    Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                </div>
-            </li>
-            <li class="traits__item">
-                <div class="traits__item-header">
-                    <div class="traits__item-icon"></div>
-                </div>
-                <div class="traits__item-title">
-                    ПУНКТУАЛЬНІСТЬ
-                </div>
-                <div class="traits__item-subtitle">
-                    Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                </div>
-            </li>
-            <li class="traits__item">
-                <div class="traits__item-header">
-                    <div class="traits__item-icon"></div>
-                </div>
-                <div class="traits__item-title">
-                    ПЛАНУВАННЯ
-                </div>
-                <div class="traits__item-subtitle">
-                    Так само консультація з широким активом значною мірою зумовлює.
-                </div>
-            </li>
-            <li class="traits__item">
-                <div class="traits__item-header">
-                    <div class="traits__item-icon"></div>
-                </div>
-                <div class="traits__item-title">
-                    СУЧАСНІ ТЕХНОЛОГІЇ
-                </div>
-                <div class="traits__item-subtitle">
-                    Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </div>
-        </li>
-    </div>
-</div>
-		<section class="what-we-do">
-    <div class="global-container">
-        <div class="what-we-do__wrapper">
-            <div class="what-we-do__title">
-                Чим ми займаємося
-            </div>
-            <div class="what-we-do__items">
-                <div class="what-we-do__item">
-                    <div class="what-we-do__footer">
-                        <div class="what-we-do__footer-title">
-                            Десктопні додатки
-                        </div>
-                    </div>
-                </div>
-                <div class="what-we-do__item">
-                    <div class="what-we-do__footer">
-                        <div class="what-we-do__footer-title">
-                            Мобільні додатки
-                        </div>
-                    </div>
-                </div>
-                <div class="what-we-do__item">
-                    <div class="what-we-do__footer">
-                        <div class="what-we-do__footer-title">
-                            Дизайнерські рішення
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-		<section class="team">
-    <div class="global-container">
-        <p class="team__title">
-            Наша команда
-        </p>
-        <ul class="team__items">
-            <li class="team__item team-item">
-                <div class="team-item__img"></div>
-                <div class="team-item__content">
-                    <div class="team-item__description">
-                        <div class="team-item__title">
-                            Ігор Дем'яненко
-                        </div>
-                        <div class="team-item__subtitle">
-                            Product Designer
-                        </div>
-                    </div>
-                    <div class="team-item__socials team-socials">
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="team__item team-item">
-                <div class="team-item__img"></div>
-                <div class="team-item__content">
-                    <div class="team-item__description">
-                        <div class="team-item__title">
-                            Ігор Дем'яненко
-                        </div>
-                        <div class="team-item__subtitle">
-                            Product Designer
-                        </div>
-                    </div>
-                    <div class="team-item__socials team-socials">
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="team__item team-item">
-                <div class="team-item__img"></div>
-                <div class="team-item__content">
-                    <div class="team-item__description">
-                        <div class="team-item__title">
-                            Ігор Дем'яненко
-                        </div>
-                        <div class="team-item__subtitle">
-                            Product Designer
-                        </div>
-                    </div>
-                    <div class="team-item__socials team-socials">
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="team__item team-item">
-                <div class="team-item__img"></div>
-                <div class="team-item__content">
-                    <div class="team-item__description">
-                        <div class="team-item__title">
-                            Ігор Дем'яненко
-                        </div>
-                        <div class="team-item__subtitle">
-                            Product Designer
-                        </div>
-                    </div>
-                    <div class="team-item__socials team-socials">
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                        <div class="team-socials__icon"></div>
-                    </div>
-                </div>
-            </li>
-
-        </ul>
-    </div>
-</section>
-		<section class="clients">
-    <div class="global-container">
-        <div class="clients__wrapper">
-            <div class="clients__title">
-                Постійні клієнти
-            </div>
-            <ul class="clients__list">
-                <li class="clients__item">
-                    <div class="clients__item--icon"></div>
-                </li>
-                <li class="clients__item">
-                    <div class="clients__item--icon"></div>
-                </li>
-                <li class="clients__item">
-                    <div class="clients__item--icon"></div>
-                </li>
-                <li class="clients__item">
-                    <div class="clients__item--icon"></div>
-                </li>
-                <li class="clients__item">
-                    <div class="clients__item--icon"></div>
-                </li>
-                <li class="clients__item">
-                    <div class="clients__item--icon"></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
 
 	</main>
 	<footer class="footer">
-    <div class="global-container">
-        <div class="footer__wrapper">
-            <div class="footer__contact footer-contact">
-                <div class="footer-contact__item">
-                    <p class="footer-contact__logo">WebStudio</p>
-                    <div class="footer-contact__adress">
-                        <a href="#" class="footer-contact__link">м. Київ, пр-т Лесі Українки, 26</a>
-                        <a href="mailto:info@devstudio.com" class="footer-contact__link">info@devstudio.com</a>
-                        <a href="tel:+380961111111" class="footer-contact__link">+38 096 111 11 11</a>
-                    </div>
-                </div>
-                <div class="footer-contact__item">
-                   <div class="footer-contact__socials">
-                        <p class="footer-contact__socials--title">приєднуйтесь</p>
-                        <ul class="footer-contact__socials-items">
-                            <li class="footer-contact__socials-items--item"></li>
-                            <li class="footer-contact__socials-items--item"></li>
-                            <li class="footer-contact__socials-items--item"></li>
-                            <li class="footer-contact__socials-items--item"></li>
-                        </ul>
-                   </div>
-                </div>
-            </div>
-            <div class="footer-mailing">
-                <div class="footer-mailing__item">
-                    <p class="footer-mailing__title">
-                        Підпишіться на розсилку
-                    </p>
-                    <input placeholder="E-mail" type="text" class="footer-mailing__input">
-                </div>
-                <div class="footer-mailing__item">
-                    <button class="button">
-                        <p class="button__text">
-                            Підписатися
-                        </p>
-                        <div class="button__icon"></div>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </footer>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

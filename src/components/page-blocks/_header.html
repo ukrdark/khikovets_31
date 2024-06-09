@@ -1,118 +1,38 @@
 <header class="header">
-    <div class="global-container">
+    <div class="header__container">
         <div class="header__wrapper">
-            <a href="./index.html" class="header__logo">
-                <span class="header__logo-text">
-                    Web
-                </span>
-                <span class="header__logo-text">
-                    Studio
-                </span>
+            <a class="header__logo" href="#">
+                <div class="header__logo--logo"></div>
+                <div class="header__logo--text">Knowledgechain</div>
             </a>
-            <div class="header-links-list">
-                <ul class="header-links-list__list">
-                    <li class="header-links-list__item">
-                        <a href="#" class="header-links-list__link">Студія</a>
-                    </li>
-                    <li class="header-links-list__item">
-                        <a href="./portfolio.html" class="header-links-list__link">Портфоліо</a>
-                    </li>
-                    <li class="header-links-list__item">
-                        <a href="#" class="header-links-list__link open-modal">Контакти</a>
-                    </li>
+            <nav class="header__navbar navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__list--item"></li>
+                    <li class="navbar__list--item"></li>
+                    <li class="navbar__list--item"></li>
+                    <li class="navbar__list--item"></li>
+                    <li class="navbar__list--item"></li>
                 </ul>
-            </div>
-            <div class="header-contacts">
-                <ul class="header-contacts__list">
-                    <li class="header-contacts__item">
-                        <a href="mailto:info@devstudio.com" class="header-contacts__link">info@devstudio.com</a>
-                    </li>
-                    <li class="header-contacts__item">
-                        <a href="tel:+38 096 111 11 11" class="header-contacts__link">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="burger-menu">
-                <span class="burger-menu__item"></span>
-                <span class="burger-menu__item"></span>
-                <span class="burger-menu__item"></span>
+                <div class="navbar__searchbar">
+                    <input type="text" class="navbar__searchbar" placeholder="Type here to search...">
+                </div>
+            </nav>
+            <div class="header__profile profile">
+                <div class="profile__icon"></div>
+                <div class="profile__icon"></div>
+                <div class="profile__icon"></div>
+                <p class="profile__name">AR. Jakir</p>
             </div>
         </div>
     </div>
 </header>
 
-
-
-<div class="mobile-navbar">
+<navbar class="mobile-navbar">
     <ul class="mobile-navbar__list">
-        <li class="mobile-navbar__items">
-            <a href="#" class="mobile-navbar__link">Студія</a>
-            <a href="./portfolio.html" class="mobile-navbar__link">Портфоліо</a>
-            <a href="#" class="mobile-navbar__link">Контакти</a>
-        </li>
+        <li class="mobile-navbar__list--item"></li>
+        <li class="mobile-navbar__list--item"></li>
+        <li class="mobile-navbar__list--item"></li>
+        <li class="mobile-navbar__list--item"></li>
+        <li class="mobile-navbar__list--item"></li>
     </ul>
-    <div class="mobile-navbar__contacts navbar-contacts">
-        <div class="navbar-contacts__contacts">
-            <a tel="+38 096 111 11 11" class="mobile-navbar__contacts--phone">+38 096 111 11 11</a>
-            <a mailto="info@devstudio.com" class="mobile-navbar__contacts--email">info@devstudio.com</a>
-        </div>
-        <ul class="navbar-contacts__socials navbar-socials">
-            <li class="navbar-socials__item">
-                <a href="#" class="navbar-socials__link">Instagram</a>
-            </li>
-            <li class="navbar-socials__item">
-                <a href="#" class="navbar-socials__link">Twitter</a>
-            </li>
-            <li class="navbar-socials__item">
-                <a href="#" class="navbar-socials__link">Facebook</a>
-            </li>
-            <li class="navbar-socials__item">
-                <a href="#" class="navbar-socials__link">LinkedIn</a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-
-
-
-
-<div class="modal">
-    <div class="modal-content">
-        <div class="modal-content__close">
-            <button class="modal-content__close-button" onclick="handleModal()"></button>
-        </div>
-        <p class="modal-content__title">
-            Залиште свої дані, ми вам передзвонимо
-        </p>
-        <form action="" class="modal-content__form">
-            <div class="modal-content__input-container">
-                <label for="modal-name" class="modal-content__input-label">Ім'я</label>
-                <input type="text" id="modal-name" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-phone" class="modal-content__input-label">Телефон</label>
-                <input type="text" id="modal-phone" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-email" class="modal-content__input-label">Пошта</label>
-                <input type="email" id="modal-email" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-comment" class="modal-content__input-label">Коментар</label>
-                <input type="text" id="modal-comment" class="modal-content__input modal-content__input--textarea" placeholder="Введіть текст">
-            </div>
-            <div class="modal-content__input-checkbox-container">
-                <input type="checkbox" id="modal-policies" class="modal-content__input" placeholder="Введіть текст">
-                <label for="modal-policies" class="modal-content__input-label">Погоджуюся з розсилкою та приймаю Умови договору</label>
-            </div>
-            <div class="modal-content__send-btn">
-                <button class="button">
-                    <p class="button__text">
-                        Відправити
-                    </p>
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
+</navbar>

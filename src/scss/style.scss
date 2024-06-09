@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 @import 'base/*.scss';
 @import 'global/*.scss';
 @import '**/_*.scss';
@@ -11,52 +11,14 @@ ul li{
 ul{
     padding-block-start: 0;
     margin-block-start: 0;
+    padding: 0;
+    margin: 0;
 }
+
 *{
-    font-family: Roboto;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: #212121;
-    transition: .3s;
-    &:hover{
-        color: #2196F3;
-
-    }
-}
-
-
-
-
-
-.global-container{
-    width: min(1400px, 100%);
-    padding: 20px;
-    margin: 0 auto;
-}
-
-
-
-
-.button{
-    width: max-content;
-    padding: 10px 24px;
-    background-color: #2196F3;
-    border-radius: 4px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition: .3s;
-}
-
-.button__text{
-    line-height: 30px;
-    font-style: bold;
-    color: white;
-}
-
-.button:hover{
-    background-color: transparent;
-    border-color: #2196F3;
-    transition: .3s;
 }
