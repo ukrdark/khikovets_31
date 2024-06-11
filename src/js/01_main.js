@@ -1,16 +1,33 @@
-const burger = document.querySelector(".burger-menu");
-const navbar = document.querySelector(".mobile-navbar");
-const openModalButton = document.querySelector(".open-modal");
-const modal = document.querySelector(".modal");
+const createButton = document.querySelector(".create-post__create-btn");
+const postContainer = document.querySelector(".main-content");
 
-const handleBurgerMenuOpen = () => {
-    burger.classList.toggle("burger-active")
-    navbar.classList.toggle("mobile-navbar--active")
+const handleAddPost = () => {
+    const text = document.querySelector(".create-post__input").value; // Move this inside the function
+    postContainer.insertAdjacentHTML('beforeend', `
+        <div class="post">
+            <div class="post__img"></div>
+            <div class="post__content">
+                <div class="post__item">
+                    <div class="post__item--head">
+                        <div class="post__title">${text}</div>
+                        <div class="post__categories">
+                            <p class="post__category">new</p>
+                        </div>
+                    </div>
+                    <div class="post__info">
+                        <div class="post__author">
+                            <div class="post__author--icon"></div>
+                            <div class="post__author--info">
+                                <p class="post__author--name">AR Jakir</p>
+                                <p class="post__author--date">3 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `);
+
 }
 
-const handleModal = () => {
-    modal.classList.toggle("modal--active")
-}
-
-openModalButton.addEventListener("click", () => handleModal())
-burger.addEventListener("click", () => handleBurgerMenuOpen())
+createButton.addEventListener("click", handleAddPost);

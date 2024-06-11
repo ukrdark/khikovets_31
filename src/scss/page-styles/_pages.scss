@@ -1,0 +1,25 @@
+.schedule{
+    width: min(100%, 1200px);
+    margin: 100px auto; 
+}
+
+.meetups__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.podcasts__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.podcasts__wrapper .podcasts__item{
+    padding: 15px;
+    background-color: #1e252b;
+    border-radius: 20px;
+}

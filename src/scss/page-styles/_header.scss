@@ -1,7 +1,9 @@
 .header {
-    background-color: #262D34;
+    background-color: #262d34;
     padding: 20px;
     width: 100%;
+    position: fixed;
+    z-index: 9999999;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -83,17 +85,19 @@
         outline: none;
         border: none;
         border-radius: 10px;
-        padding: 5px 15px;
+        padding: 7px 15px;
+        padding-right: 100px;
         position: relative;
         &::after{
             content: "";
             position: absolute;
             right: 10px;
-            top: 10px;
+            top: 15px;
             width: 20px;
             height: 20px;
             background-repeat: no-repeat;
             background-image: url("../../img/icons/header/search.svg");
+            cursor: pointer;
         }
         @media screen and (max-width: 800px){
             width: 50px;
@@ -143,14 +147,14 @@
     }
 }
 
-
 .mobile-navbar{
     display: none;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #262D34;
+    background-color: #3e4246;
     padding: 14px 27px;
+    z-index: 999999;
     @media screen and (max-width: 768px) {
         display: flex;
         justify-content: center;

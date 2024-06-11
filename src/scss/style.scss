@@ -22,3 +22,18 @@ ul{
 a{
     text-decoration: none;
 }
+
+.main{
+    background-color: #1e252b;
+    overflow: hidden;
+}
+
+.global-container{
+    width: min(1700px, 100%);
+    padding: 20px 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+  }
+}
